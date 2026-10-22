@@ -1,0 +1,81 @@
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secret*
+*token*
+
+# Local databases and memory stores
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.wal
+*.shm
+*.journal
+
+# Real conversation / user data / exports
+logs/
+log/
+data/private/
+data/personal/
+conversations/
+conversation-logs/
+memory-data/
+user-data/
+exports/
+backups/
+*.chatlog
+*.transcript
+
+# Model/provider caches and local artifacts
+.cache/
+cache/
+artifacts/
+*.bin
+*.onnx
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary / generated review bundles
+.review-*/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Local test output
+coverage.xml
+junit.xml
+test-results/
+
+# Never commit production memory snapshots
+*memory*snapshot*
+*production*memory*
