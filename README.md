@@ -8,6 +8,8 @@ Persistent, auditable memory architecture for a personal AI desk robot, with pro
 
 This repository tracks the memory subsystem for a personal AI desk robot. The goal is not perfect semantic memory. The goal is a system that is useful in everyday conversation while keeping memory changes traceable, correctable and recoverable.
 
+For the current development status, acceptance philosophy, hard blockers and near-term direction, see [`PROJECT_STATUS.md`](PROJECT_STATUS.md).
+
 Current development priorities:
 
 - persistent conversational memory;
@@ -55,4 +57,4 @@ The current direction is pragmatic: preserve strong state-integrity guarantees w
 
 ## License
 
-No public license has been selected yet. The repository is currently private.
+No public license has been selected yet. The repository is public for transparency and collaborative learning, but no reuse license has been granted at this stage.
