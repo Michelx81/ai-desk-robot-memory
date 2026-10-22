@@ -25,11 +25,23 @@ Current development priorities:
 
 Semantic mistakes in low-risk conversational memory can be tolerated when they are visible, traceable and correctable. Silent state corruption, unexplained mutation, irreversible history loss and memory-only authorization of high-impact actions are not acceptable.
 
+## How it works
+
+The intended memory path is documented in [`docs/WORKFLOW.md`](docs/WORKFLOW.md):
+
+```text
+Conversation → source event → extraction → validation → memory event → current view → retrieval → response
+```
+
+Known failure locations and a practical diagnostic sequence are documented in [`docs/FAILURE_MODES.md`](docs/FAILURE_MODES.md).
+
+Project-wide known semantic limitations and hard non-acceptable failures are tracked in [`KNOWN_ISSUES.md`](KNOWN_ISSUES.md).
+
 ## Repository safety
 
 This repository must not contain real personal conversation logs, production memory databases, API keys, credentials or other private user data. Test data should be synthetic.
 
-See `SECURITY_AND_PRIVACY.md` and `.gitignore` before importing local development files.
+See [`SECURITY_AND_PRIVACY.md`](SECURITY_AND_PRIVACY.md) and `.gitignore` before importing local development files.
 
 ## Project scope
 
